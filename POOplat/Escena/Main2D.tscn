@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Escena/Pjs/Character.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Visual/tileset_1.tres" type="TileSet" id=2]
+
+[node name="Main2D" type="Node2D"]
+
+[node name="Character" parent="." instance=ExtResource( 1 )]
+position = Vector2( 23.7432, -123.033 )
+
+[node name="Camera2D" type="Camera2D" parent="Character"]
+current = true
+
+[node name="TileMap" type="TileMap" parent="."]
+scale = Vector2( 2, 2 )
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 40, 40 )
+format = 1
+tile_data = PoolIntArray( 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 65547, 3, 0, 65548, 3, 1, 65549, 3, 2, 65550, 2, 0, 65551, 1, 0, 196605, 3, 0, 196606, 3, 1, 196607, 3, 1, 131072, 3, 1, 131073, 3, 1, 131074, 3, 1, 131075, 3, 2, 131076, 4, 0, 131077, 4, 1, 131078, 4, 1, 131079, 4, 1, 131080, 4, 1, 131081, 4, 1, 131082, 4, 2, 131083, 3, 65536, 131084, 3, 65537, 131085, 3, 65538, 262141, 3, 65536, 262142, 3, 65537, 262143, 3, 65537, 196608, 3, 65537, 196609, 3, 65537, 196610, 3, 65537, 196611, 3, 65538, 196619, 3, 65536, 196620, 3, 65537, 196621, 3, 65538, 327677, 3, 131072, 327678, 3, 131073, 327679, 3, 131073, 262144, 3, 131073, 262145, 3, 131073, 262146, 3, 131073, 262147, 3, 131074, 262155, 3, 131072, 262156, 3, 131073, 262157, 3, 131074, 327681, 0, 0, 393217, 0, 0 )
